@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MdIconRegistry } from '@angular/material';
 
 @Component({
   selector: 'bl-opd',
@@ -15,4 +16,9 @@ export class OpdComponent {
     'Chandra',
     'Gala'
   ];
+
+  constructor(mdIconReg: MdIconRegistry) {
+    mdIconReg.registerFontClassAlias('fa', 'fa');
+    mdIconReg.setDefaultFontSetClass('fa');
+  }
 }

@@ -1,5 +1,10 @@
-<h1>Welcome to {{name}}!!</h1>
+<md-toolbar>
+<md-icon fontIcon="fa-bars"></md-icon>
+<div class="brand">{{name}}</div>
+</md-toolbar>
 
 <ul>
-  <li *ngFor="let doctor of doctors">{{doctor}}</li>
+  <li *ngFor="let doctor of doctors">
+    <md-card>{{doctor}}</md-card>
+  </li>
 </ul>

@@ -1,7 +1,13 @@
-h1 {
-  text-align: center
-}
-
 li {
   font-size: bigger;
+  list-style: none;
+}
+
+md-card {
+  margin: 1em 0;
+  max-width: 20em;
+}
+
+.brand {
+  padding-left: 1em;
 }

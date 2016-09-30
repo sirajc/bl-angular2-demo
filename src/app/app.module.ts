@@ -1,5 +1,6 @@
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { OpdModule } from './opd';
@@ -10,7 +11,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   imports: [
     BrowserModule,
     OpdModule,
-
+    MaterialModule.forRoot()
   ],
   declarations: [
     AppComponent

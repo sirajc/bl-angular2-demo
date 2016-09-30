@@ -2,12 +2,15 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { OpdModule } from './opd';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    OpdModule,
+
   ],
   declarations: [
     AppComponent

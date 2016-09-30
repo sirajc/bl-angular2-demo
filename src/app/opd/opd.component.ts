@@ -9,14 +9,6 @@ import { MdIconRegistry } from '@angular/material';
 export class OpdComponent {
   name: string = 'BL OPD';
 
-  doctors = [
-    'Tasleem',
-    'Bhanushali',
-    'Tanveer',
-    'Chandra',
-    'Gala'
-  ];
-
   constructor(mdIconReg: MdIconRegistry) {
     mdIconReg.registerFontClassAlias('fa', 'fa');
     mdIconReg.setDefaultFontSetClass('fa');

@@ -1,10 +1,8 @@
 <md-toolbar>
-<md-icon fontIcon="fa-bars"></md-icon>
-<div class="brand">{{name}}</div>
+<md-icon fontIcon="fa-stethoscope"></md-icon>
+<a md-button routerLink="" class="brand">{{name}}</a>
+<a md-button routerLink="doctors" >Doctors</a>
 </md-toolbar>
 
-<ul>
-  <li *ngFor="let doctor of doctors">
-    <md-card>{{doctor}}</md-card>
-  </li>
-</ul>
+<router-outlet></router-outlet>
+

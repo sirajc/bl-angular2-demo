@@ -1,0 +1,6 @@
+<h1>Pateint List</h1>
+
+
+<md-card *ngFor="let patient of patients">
+  <a [routerLink]="[patient.id]">{{patient.name}}</a>
+</md-card>
